@@ -12,6 +12,7 @@
       color: white;
     }
 
+    /* Top bar */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -37,8 +38,54 @@
       color: white;
     }
 
+    /* Page content */
     .main {
       padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Software cards */
+    .software-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .software-card {
+      background-color: #1a1a22;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .software-card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .software-card p {
+      font-size: 14px;
+      color: #cfcfe6;
+    }
+
+    .software-card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 14px;
+      background-color: #2a2a3d;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .software-card a:hover {
+      background-color: #3a3a55;
     }
   </style>
 </head>
@@ -55,7 +102,41 @@
 
   <div class="main">
     <h1>Software</h1>
-    <p>Projects, tools, and other cool stuff go here.</p>
+    <p>Downloads, tools, and projects I’ve made.</p>
+
+    <div class="software-grid">
+
+      <!-- Software Item 1 -->
+      <div class="software-card">
+        <h2>Project Name</h2>
+        <p>
+          Short description of what this software does.
+          You can explain features, purpose, or requirements.
+        </p>
+        <a href="#">Download</a>
+      </div>
+
+      <!-- Software Item 2 -->
+      <div class="software-card">
+        <h2>Another Project</h2>
+        <p>
+          Placeholder text for another program or tool.
+          Replace this with real details later.
+        </p>
+        <a href="#">Download</a>
+      </div>
+
+      <!-- Software Item 3 -->
+      <div class="software-card">
+        <h2>Experimental Build</h2>
+        <p>
+          Beta or experimental software.
+          Mention warnings or version info here.
+        </p>
+        <a href="#">Download</a>
+      </div>
+
+    </div>
   </div>
 
 </body>
