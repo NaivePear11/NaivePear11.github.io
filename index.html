@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Supapaaa</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0f0f14;
-      color: white;
-    }
-
-    /* Top bar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 24px;
-      background-color: #1a1a22;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    }
-
-    .navbar .title {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .navbar a {
-      color: #cfd3ff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
-
-    .navbar a:hover {
-      color: white;
-    }
-
-    /* Center content */
-    .main {
-      height: calc(100vh - 56px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin: 0;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sockyvr</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="navbar">
-    <div class="title">Naivepear11</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="software.html">Software</a>
-       <a href="videos.html">Videos</a>
-    </div>
-  </div>
+<div class="grain"></div>
+<div class="scanline"></div>
 
-  <div class="main">
-    <h1>Welcome to Naivepear11's EPIC GitHub Page</h1>
+<nav class="topbar">
+  <span class="brand">SOCKYVR<span class="blink">_</span></span>
+  <div class="nav-links">
+    <a href="#mods">mods</a>
+    <a href="#about">about</a>
+    <a href="#links">links</a>
   </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glow"></div>
+  <p class="eyebrow">// status: <span class="status-live">online</span></p>
+  <h1 class="hero-title">hey, i'm socky</h1>
+  <p class="hero-sub">i mod gorilla tag, wreck cars in beamng, and animate stuff i'm too scared of at 2am.</p>
+  <div class="hero-tags">
+    <span class="tag">GTAG MODDING</span>
+    <span class="tag">ANIMATION</span>
+    <span class="tag">CHAOS TESTING</span>
+  </div>
+</header>
+
+<main>
+
+  <section id="mods" class="section">
+    <h2 class="section-title"><span class="idx">01</span> mods</h2>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-top">
+          <span class="card-tag">cosmetic</span>
+          <span class="card-status wip">in progress</span>
+        </div>
+        <h3>socky shirt</h3>
+        <p>custom texture atlas shirt. front, back, and sleeve panels hand-painted UV by UV.</p>
+      </article>
+
+      <article class="card placeholder">
+        <div class="card-top">
+          <span class="card-tag">mod</span>
+          <span class="card-status">—</span>
+        </div>
+        <h3>+ add your next mod here</h3>
+        <p>swap this card out for your next drop. same structure, new content.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title"><span class="idx">02</span> about</h2>
+    <p class="about-text">
+      Learning texture work from zero, chasing tornadoes from a safe distance,
+      and letting BeamNG's crash physics teach me more about impact than I asked for.
+      Mostly here for whatever's next.
+    </p>
+  </section>
+
+  <section id="links" class="section">
+    <h2 class="section-title"><span class="idx">03</span> links</h2>
+    <div class="link-row">
+      <a href="#" class="link-btn">Discord</a>
+      <a href="#" class="link-btn">YouTube</a>
+      <a href="#" class="link-btn">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>built on a whim · edit this on GitHub</p>
+</footer>
 
 </body>
 </html>
